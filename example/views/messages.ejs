@@ -1,0 +1,10 @@
+<div id="all-messages-container">
+<% allMessages.forEach(function (message) { %>
+    <section>
+        <%- include('message', {content: message}) -%>
+    </section>
+<% }); %>
+    <% if (allMessages.length === 0) { %>
+       <span>No messages have been created yet, bummer! Check back soon, or drop your own message in to the box ^^</span>
+    <% } %>
+</div>
