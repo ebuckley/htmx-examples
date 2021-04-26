@@ -29,3 +29,13 @@ On the homepage, we lazy load the latest messages in to a component.
 
 ## Example 4: integrating a js framework/library
 
+
+
+# TODO
+
+What I need to do to prep for chch.js
+
+- do an example of integrating a js framework/library
+- do other routes for example of 'boosting links'
+- nice to have: experiment with websockets.
+- nice to have: styles of the whole thing, she's looking pretty prutal right now!!

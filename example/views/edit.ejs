@@ -1,0 +1,27 @@
+
+<!-- Create the toolbar container -->
+<div id="toolbar" >
+    <button class="ql-bold">Bold</button>
+    <button class="ql-italic">Italic</button>
+    <form method="post">
+        <input id="editor-output" type="hidden" name="content" />
+        <button class="save-btn">Save</button>
+    </form>
+</div>
+
+<!-- Create the editor container -->
+<div id="editor" style="height: calc(100vh - 5em);">
+    <p>Wire something important here.</p>
+</div>
+
+<!-- Initialize Quill editor -->
+<script>
+    var editor = new Quill('#editor', {
+        modules: { toolbar: '#toolbar' },
+        theme: 'snow'
+    });
+
+    document.querySelector('.save-btn').addEventListener('click', e => {
+        document.querySelector('#editor-output').value = editor.root.innerHTML;
+    })
+</script>

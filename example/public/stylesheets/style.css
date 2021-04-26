@@ -6,3 +6,46 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+body {
+  padding: 25px;
+}
+
+#editor-container {
+  display: block;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 1.2em;
+  height: 200px;
+  margin: 0 auto;
+  width: 450px;
+}
+
+#tooltip-controls, #sidebar-controls {
+  text-align: center;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 0;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+}
+button:active, button:focus {
+  outline: none;
+}
+
