@@ -1,4 +1,4 @@
-#lighting talk on htmx and html over the wire
+# Lightning talk on htmx
 
 Matt asked me to give a lightning talk about something, and I wasn't immediately sure what I would cover, htmx is a pretty nifty tool I recently came across, and I decided that this would be a good place to start for the talk. The project here is the result of the talk, and I hope to include a few examples for you to follow along with.
 
@@ -17,7 +17,7 @@ As this talk is at a javsacript meetup, I thought I would build out some small e
 
 ## Example 1: a simple form in htmx
 
-We have a simple form here which submits to the `/message/` endpoint, and then targets it's ocntent to another div to append the output
+We have a simple form here which submits to the `/message/` endpoint, and then targets it's content to another div to append the output
 
 ## Example 2: routing just the part you want.
 
@@ -29,13 +29,12 @@ On the homepage, we lazy load the latest messages in to a component.
 
 ## Example 4: integrating a js framework/library
 
-
+We have an example of using the quill browser to provide a rich text editing component. The 'edit.ejs' view specifies the loading of the component, and the submitting of the form as a post to /messages/new which manages the creation of the new resource.
 
 # TODO
 
-What I need to do to prep for chch.js
+What else might I look in to or extend this project with?
 
-- do an example of integrating a js framework/library
-- do other routes for example of 'boosting links'
-- nice to have: experiment with websockets.
-- nice to have: styles of the whole thing, she's looking pretty prutal right now!!
+- experiment with websockets, and streaming htmx templates over the wire
+- integrate postcss and purge
+- make it beautiful
