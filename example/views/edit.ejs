@@ -3,12 +3,12 @@
 <div id="toolbar" >
     <button class="ql-bold">Bold</button>
     <button class="ql-italic">Italic</button>
+    <button id="ql-link"></button>
     <form method="post">
         <input id="editor-output" type="hidden" name="content" />
         <button class="save-btn">Save</button>
     </form>
 </div>
-
 <!-- Create the editor container -->
 <div id="editor" style="height: calc(100vh - 5em);">
     <p>Wire something important here.</p>
@@ -16,9 +16,14 @@
 
 <!-- Initialize Quill editor -->
 <script>
+    // var toolbarOptions = [['bold', 'italic'], ['link', 'image']];
     var editor = new Quill('#editor', {
-        modules: { toolbar: '#toolbar' },
-        theme: 'snow'
+        theme: 'snow',
+        debug: 'error',
+        bounds: document.body,
+        modules: {
+            toolbar: '#toolbar'
+        }
     });
 
     document.querySelector('.save-btn').addEventListener('click', e => {

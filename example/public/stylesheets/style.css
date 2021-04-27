@@ -3,6 +3,19 @@ body {
   font: 14px sans-serif;
 }
 
+nav {
+  display: flex;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
+
+nav a {
+  color: #333;
+  padding: 8px;
+}
+nav a:hover {
+  color: orangered;
+}
 a {
   color: #00B7FF;
 }

@@ -1,7 +1,7 @@
 <div id="all-messages-container">
 <% allMessages.forEach(function (message) { %>
     <section>
-        <%- include('message', {content: message}) -%>
+        <%- message -%>
     </section>
 <% }); %>
     <% if (allMessages.length === 0) { %>
