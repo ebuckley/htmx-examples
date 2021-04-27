@@ -8,7 +8,7 @@ HTML over the wire is a current trend coming out of the rails camp. DHH, has bee
 
 It is an alternative to building out a lot of components and wiring them up to state frameworks and then de/serializing data in and out of a JSON api. Plain old html is sent over the wire instead, and the browser renders it as necessary. The htmx framework is in my opinion a good place to start with this pattern, and it fits in to just about any backend you can imagine.
 
-Projects that use this approach have a much smaller bundle, and will work very well on older cell phone devices. Instead of having any complex business logic or rendering logic in the frontend, all of this is offloaded to the server. In one way, this is a better approach to providing a service, you can't gaurgntee what kind of end device is running your code, and it is very hard to provide an experience that works well on bottom end android's through to the latest and greatest devices.
+Projects that use this approach have a much smaller bundle, and will work very well on older cell phone devices. Instead of having any complex business logic or rendering logic in the frontend, all of this is offloaded to the server. In one way, this is a better approach to providing a service, you can't guarantee what kind of end device is running your code, and it is very hard to provide an experience that works well on bottom end android's through to the latest and greatest devices.
 
 You do not need to give up highly dynamic components when using an html over the wire approach. Instead, when you bring some javascript to a page, you can focus only on the parts where javascript shines, be that some glue to wire animations or a fancy chart or some rendered canvas interactivity.
 
